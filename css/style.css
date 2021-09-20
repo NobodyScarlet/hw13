@@ -1,0 +1,257 @@
+
+* {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.header__container {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around
+  
+}
+
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 42px;
+}
+
+.header__logo img{
+  padding: 0 15px;
+}
+
+
+.navigation li {
+  display: inline-block;
+  color: #aeaeae;
+}
+
+.navigation li a {
+  position: relative;
+	cursor: pointer;
+	text-decoration: none; 
+  color: rgb(108, 108, 108);
+  font-size: 16px;
+  padding: 31px 23px;
+}
+
+.navigation li a:after {
+  display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 3px; 
+	background-color: #5094f2;
+	content: "";
+	transition: 0.3s ease-out;
+  margin-top: 26px; 
+}
+
+.navigation li a:hover:after,
+a:focus:after {
+	width: 100%;
+  margin-top: 26px;
+ }
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  min-width: 1000px
+}
+
+
+
+.previews .centered {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: #fff;  
+  
+
+}
+
+.previews .centered .previews__Heading {
+  font-size: 42.35px;
+  
+}
+
+.previews .background {
+  min-width: 1440px
+}
+
+.previews .centered .previews__item {
+  max-width: 250px;
+  font-size: 23px;
+  line-height: 2;
+  padding-bottom: 10px;
+}
+
+.layer {
+ position: absolute;
+ width: 370px;
+ left: 245px;
+ top: 117px;
+ transition: 0.3s;
+ }
+
+ .layer:hover {
+  -webkit-transform: rotateZ(5deg);
+  -ms-transform: rotateZ(5deg);
+  transform: rotateZ(5deg);
+}
+
+
+.previews button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 22.35px;
+  height: 41px;
+  width: 176px;
+  margin-left: 10px;
+  background: #5094f2;
+  border: none;
+  border-radius: 2px;
+  transition: 0.7s ease;
+  color: #fff;
+  
+}
+
+
+
+.previews button:hover {
+  border-radius: 30px;
+  transition: 0.7s ease;
+  font-size: 23px;
+}
+
+.previews button img {
+  width: 22px;
+  
+  
+}
+
+.previews button:active {
+  background: skyblue;
+}
+
+.possibilities {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+
+}
+
+
+.possibilities .possibilitie__item img {
+  margin: 0  auto;
+  transition: 0.3s;
+}
+
+.possibilities .possibilitie__item img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.possibilitie__item h3 {
+  font-size: 20.35px;
+  margin-top: 40px;
+  color: #5094f2
+}
+
+.possibilitie__item p {
+  font-size: 14.35px;
+  width: 265px;
+  height: 31px;
+  line-height: 1.5;
+  color: rgb(144, 144, 144);
+}
+
+
+
+.product {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.product h1 {
+  font-size: 42.35px;
+  line-height: 2;
+  color: rgb(111, 113, 115);
+  padding-bottom: 36px;
+}
+
+.product-logo {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.product-logo img {
+  -webkit-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+ 
+}
+
+.product-logo img:hover {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 90px 50px 0;
+  
+}
+
+
+.product__item ul::first-line {
+ font-weight: 400;
+ font-size: 26.35px;
+ color: rgb(111, 113, 115);
+ 
+}
+
+
+
+.product__item li {
+  font-size: 15.35px;
+  list-style: none;
+  line-height: 2.345;
+  text-align: left;
+  color: rgb(144, 144, 144);
+}
+
+
+
+.footer__border {
+  border: 1px solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color:rgb(144, 144, 144);
+}
+
+.footer__item {
+  padding: 35px;
+  display: flex;
+  justify-content: center;;
+  font-size: 15.35px;
+  color: rgb(144, 144, 144);
+}
