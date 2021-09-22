@@ -70,7 +70,7 @@ a:focus:after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 50px 20px;
+  padding: 30px 20px;
 }
 
 .phone__text {
@@ -85,9 +85,6 @@ a:focus:after {
   justify-content: center;
 }
 
-.iphone__wrapper img {
-  margin-left: 100px;
-}
 
 .iphone__wrapper,
 .text__wrapper {
@@ -116,7 +113,8 @@ a:focus:after {
   font-size: 20px;
 }
 
-.item button.icon {
+.item a.icon {
+  text-decoration: none;
   background: #5094f2;
   color: white;
   border-radius: 2px;
@@ -126,17 +124,17 @@ a:focus:after {
   transition: 0.3s;
 }
 
-.item button.icon:hover {
+.item a.icon:hover {
   transition: 0.3s;
   border-radius: 10px;
 }
 
-.item button.icon:active {
+.item a.icon:active {
   transition: 0.2s;
   background: skyblue;
 }
 
-.item button.icon:before {
+.item a.icon:before {
  content: '';
  display: inline-block;
  width: 20px;
@@ -150,7 +148,7 @@ a:focus:after {
  transform: translateY(-50%);
 }
 
-.item button.icon.okay:before {
+.item a.icon.okay:before {
  background-image: url("../images/okay.png");
 }
 
