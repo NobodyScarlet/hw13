@@ -196,28 +196,25 @@ a:focus:after {
 
 .product .product__container  {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .product h1 {
-  display: block;
-  width: 100%;
   font-size: 42px;
   line-height: 2;
   color: rgb(111, 113, 115);
-  padding-left: 100px;
+  
 }
 
 
-.product__logo img {
-  width: 460px
-}
 
 .product__logo {
- padding-top: 30px;
+display: flex;
+text-align: center;
+justify-content: space-between;
+flex-wrap: wrap;
  width: 50%;
- padding-left: 55px;
 }
 
 
@@ -226,7 +223,6 @@ a:focus:after {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
  
   
@@ -234,6 +230,7 @@ a:focus:after {
 
 
 .product__item p:first-child{
+ padding-top: 35px;
  font-weight: 400;
  font-size: 28px;
  color: rgb(111, 113, 115);
