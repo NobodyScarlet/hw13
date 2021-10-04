@@ -60,12 +60,11 @@ a:focus:after {
 .container {
   max-width: 1250px;
   margin: 0 auto;
-  min-width: 950px
 }
 
 
 .content__wrapper {
-  min-width: 1000px;
+
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -249,7 +248,7 @@ flex-wrap: wrap;
 
 
 .footer__border {
-  min-width: 1000px;
+  
   border: 1px solid;
   border-bottom: none;
   border-left: none;
@@ -263,4 +262,129 @@ flex-wrap: wrap;
   justify-content: center;;
   font-size: 15px;
   color: rgb(144, 144, 144);
+}
+
+
+@media(max-width: 992px) {
+
+
+  .header__logo  {
+    display: none;
+  
+  }
+ 
+  .header__container {
+    justify-content: center;
+    padding: 28px 0;
+  }
+
+
+.product__logo,img {
+  display: block;
+  margin: 0 auto;
+}
+
+   
+.product__item p {
+  line-height: 2;
+}
+  
+}
+
+@media(max-width: 768px){
+  .possibilities {
+    margin-top: 50px;
+  }
+  
+  .possibilitie__item img {
+    max-width: 150px;
+  }
+  
+  .possibilitie__item h3 {
+    padding: 0 5px;
+  }
+
+  .possibilitie__item p {
+    padding: 0 10px;
+  }
+
+  .text__wrapper h2:first-child {
+    font-size: 30px;
+  }
+
+  .text__wrapper p {
+    font-size: 25px;
+  }
+
+ .phone__text  img {
+    width: 200px;
+  }
+
+  
+  .product__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product__logo {
+    width: 100%;
+  }
+
+  .product__item {
+    width: 100%;
+    
+  }
+
+  .product__item p {
+    text-align: center;
+  }
+}
+
+@media(max-width: 576px) {
+
+  .possibilities {
+    flex-direction: column;
+    
+  }
+
+  .item__image {
+    width: 300px;
+    padding-top: 20px;
+  }
+
+  .possibilitie__item p{
+    padding: 0 50px;
+  }
+
+  .iphone__wrapper {
+    display: none
+  }
+
+  .phone__text {
+    flex-direction: column;
+  }
+
+  .text__wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .item {
+    padding-left: 0;
+  }
+
+  .item a.icon {
+    padding: 10px 10px 10px 35px;
+  }
+}
+
+@media(max-width: 480px) {
+  .navigation li a {
+    padding: 31px 5px;
+  }
+  
+  .footer__item {
+    padding: 5px;
+  }
 }
